@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+
+'use strict'
+
+const args = require('yargs')
+              .usage('Usage: docurize -i [dir glob]')
+              .demandOption(['i'])
+              .argv;
+
+const docurize = require('./../dist/index.js');
+docurize(args.i);

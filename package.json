@@ -1,0 +1,47 @@
+{
+  "name": "docurize",
+  "version": "0.1.0",
+  "description": "Generic documentation generator",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "babel src -d dist",
+    "flow": "flow check",
+    "lint": "eslint src/**/*.js",
+    "test": "mocha --compilers js:babel-register --reporter list test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Isoung/docurize.git"
+  },
+  "keywords": [
+    "documentation",
+    "doc",
+    "gen",
+    "generator"
+  ],
+  "author": "Isaiah Soung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Isoung/docurize/issues"
+  },
+  "homepage": "https://github.com/Isoung/docurize#readme",
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-preset-env": "^1.1.10",
+    "chai": "^3.5.0",
+    "eslint": "^3.16.1",
+    "eslint-plugin-import": "^2.2.0",
+    "flow-bin": "^0.40.0",
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "esprima": "^3.1.3",
+    "glob": "^7.1.1",
+    "yargs": "^6.6.0"
+  }
+}
